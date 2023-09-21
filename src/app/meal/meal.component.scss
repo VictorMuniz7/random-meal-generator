@@ -1,0 +1,169 @@
+.back{
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/background.jpg');
+  background-size: cover;
+  overflow: scroll;
+}
+
+.header{
+  width: 100%;
+  background: transparent;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1{
+    text-align: center;
+    color: white;
+    font-family: 'Croissant One', cursive;
+    font-size: 26px;
+  }
+
+  a{
+    font-size: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+.container{
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 2em auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  h1{
+    text-align: center;
+  }
+
+  img{
+    width: 250px;
+    border: 4px solid black;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  button{
+    width: 175px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #5CF26C;
+    border: 0;
+    outline: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 4px;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.details-div{
+  width: 100%;
+
+  h2{
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (min-width: 30em) {
+
+  .header{
+    h1{
+      font-size: 38px;
+    }
+
+    a{
+      font-size: 50px;
+    }
+  }
+
+  .container{
+
+    h1{
+      font-size: 38px;
+    }
+
+    img{
+      width: 350px;
+    }
+  }
+
+  .details-div{
+
+    h2{
+      font-size: 38px;
+    }
+
+    li{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 48em){
+
+  .container{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 68em){
+
+  .container{
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 78em){
+
+  .header{
+    justify-content: center;
+
+    h1{
+      font-size: 56px;
+      margin: 0 50px;
+    }
+
+    a{
+      font-size: 60px;
+    }
+  }
+
+  .container{
+    padding: 50px;
+    width: 40%;
+
+    h1{
+      font-size: 48px;
+    }
+
+    img{
+      width: 425px;
+    }
+  }
+}

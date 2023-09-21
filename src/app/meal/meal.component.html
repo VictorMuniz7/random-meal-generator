@@ -1,0 +1,26 @@
+<div class="back">
+  <div class="header">
+    <a href="https://github.com/VictorMuniz7" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <h1>Random Meal Generator</h1>
+    <a href="https://www.linkedin.com/in/victor-muniz-236842267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+  <div class="container">
+    <h1>{{ meal[0].strMeal }}</h1>
+    <img [src]="meal[0].strMealThumb" alt="Meal Thumb">
+    <div class="details-div">
+      <h2>Ingredients</h2>
+      <ul *ngFor="let int of ingredients, let i = index">
+        <li class="ingredient" *ngIf='int !== " " && meal !== null'>
+            {{int}}
+        </li>
+      </ul>
+    </div>
+    <div class="details-div">
+      <h2>Instructions</h2>
+      <p>{{ meal[0].strInstructions}}</p>
+    </div>
+
+    <button (click)="generateMeal()">Regenerate <i class="fa-solid fa-rotate"></i></button>
+  </div>
+</div>
